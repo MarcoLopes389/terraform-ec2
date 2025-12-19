@@ -5,7 +5,7 @@ resource "aws_subnet" "estudos_subnet_pub_1a" {
   map_public_ip_on_launch = true
 
   tags = merge(
-    local.tags,
+    var.tags,
     {
       Name = "${var.project_name}-subnet-pub-1a"
     }
@@ -19,7 +19,7 @@ resource "aws_subnet" "estudos_subnet_pub_1b" {
   map_public_ip_on_launch = true
 
   tags = merge(
-    local.tags,
+    var.tags,
     {
       Name = "${var.project_name}-subnet-pub-1b"
     }

@@ -7,7 +7,7 @@ resource "aws_route_table" "estudos_rtb" {
   }
 
   tags = merge(
-    local.tags,
+    var.tags,
     {
       Name = "${var.project_name}-rtb"
     }
