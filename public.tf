@@ -7,7 +7,7 @@ resource "aws_subnet" "estudos_subnet_pub_1a" {
   tags = merge(
     local.tags,
     {
-      Name = "estudos-subnet-pub-1a"
+      Name = "${var.project_name}-subnet-pub-1a"
     }
   )
 }
@@ -21,7 +21,7 @@ resource "aws_subnet" "estudos_subnet_pub_1b" {
   tags = merge(
     local.tags,
     {
-      Name = "estudos-subnet-pub-1b"
+      Name = "${var.project_name}-subnet-pub-1b"
     }
   )
 }
