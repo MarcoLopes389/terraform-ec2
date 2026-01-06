@@ -18,8 +18,3 @@ resource "aws_route_table_association" "estudos_rtb_1a" {
   subnet_id      = aws_subnet.estudos_subnet_pub_1a.id
   route_table_id = aws_route_table.estudos_rtb.id
 }
-
-resource "aws_route_table_association" "estudos_rtb_1b" {
-  subnet_id      = aws_subnet.estudos_subnet_pub_1b.id
-  route_table_id = aws_route_table.estudos_rtb.id
-}
