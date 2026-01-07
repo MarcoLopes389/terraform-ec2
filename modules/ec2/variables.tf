@@ -12,3 +12,8 @@ variable "subnet_pub_1a" {
   type        = string
   description = "The subnet ID to attach EC2 instance"
 }
+
+variable "vpc" {
+  type        = string
+  description = "The VPC id to attach in SG"
+}
